@@ -16,3 +16,8 @@ As a chat/messaging app I use Telegram, Telegram allows you to create a bot and 
 - Setup the WiFi SSID, password, Telegram API token and Chat ID. 
 - Compile and flash
 
+### How does it work
+When the ESP-01 is powerd up it contacts the Telegram API and you will recieve a doorbeel notification.
+After that the ESP is going into a deep sleep. That saves power and the battery will last much longer.
+On pushing the button the ESP gets a reset and restarts, it connects to the Wifi and calls the API etc.
+
